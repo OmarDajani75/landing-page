@@ -31,3 +31,40 @@ a {
   text-decoration: none;
   font-size: 18px;
 }
+
+/* .first-section {
+  display: flex;
+  background: #1F2937;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.hero {
+  color: #F9FAF8;
+  font-size: 48px;
+  font-weight: bolder;	
+} */
+
+/* .block {
+	overflow: hidden;
+	background: #1F2937;
+	padding: 1rem;
+	max-width: 20rem;
+	margin: 0 0 1rem 0;
+	display: flex;
+	flex-wrap: wrap;
+      }
+      .block img {
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin: 0 1rem 0 0;
+      }
+      .block h2 {
+	font-weight: 500;
+	margin: 0 0 0.5rem 0;
+      }
+      .block > div {
+	padding-left: calc(100px + 1rem);
+      } */
