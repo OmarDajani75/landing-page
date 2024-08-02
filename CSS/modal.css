@@ -1,0 +1,24 @@
+.modal {
+  background: #3882F6;
+  border-radius: 10px;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right-side1 { /* Space apart the text and button with a space-between or whatever, no? */
+  display: flex;
+  justify-content: space;
+  align-items: flex-end;
+}
+
+button {
+  background: #3882F6;
+  color: white;
+  border: 3px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+}
