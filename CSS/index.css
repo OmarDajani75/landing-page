@@ -1,0 +1,204 @@
+/* Navbar section */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  /* justify-content: space-around; Not doing anything */
+  background: #1F2937;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 30px 50px 30px;
+  gap: 52px;
+  width: 35%;
+}
+      
+.title {
+  color: #F9FAF8;
+  padding: 16px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
+}
+
+p {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+button {
+  background: #3882F6;
+  color: white;
+  border: 2px solid #3882F6;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 30px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.right-side {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 20px 30px 50px 30px;
+  gap: 52px;
+}
+      
+ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 5px 16px;
+}
+      
+a {
+  color: #E5E7EB;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+img {
+  width: 360px;
+  height: 200px;
+}
+
+/* Boxes section */
+
+.boxes-title { /* This didn't need to have its own div. It could've just been h2, but whatever */
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold; /* Was originally 900 but changed it as it doesn't seem like it matters */
+}
+
+.boxes-container { /* No comments. Easy to understand block of code */
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* To make sure boxes aren't too close to each other */
+}
+
+.item { /* This block was just max-width: 200px; before this major revision haha. Now it actually looks more correct */
+  display: flex; /* It seems like I needed to add this here. This helped with what's right down below */
+  flex-direction: column; /* To better match output, this helped to fix the text being off-center. I was missing this as well */
+  align-items: center; /* To make sure boxes were placed right above the text exactly */
+  width: 200px; /* Making it so the boxes are forced into a certain pattern with their width not getting too big. Originally max-wdith */
+}
+
+.boxes-img { /* All easy to understand code here as well */
+  width: 150px;
+  height: 150px;
+  border: 5px solid #3882f6;
+  border-radius: 10px;
+}
+
+.text { /* Why did this have its own div? It can just be p tags. I changed it after realizing. Also, Exercise #4's code wasn't all g2g */
+  text-align: center;
+  color: #1F2937; /* I shouldn't need to do this. It's because of that damn p tag up there.. */
+  margin-top: 10px;
+}
+
+/* Quote section */
+
+.quote-container {
+  background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 300px;
+  margin-top: 150px; /* All code is logical. Not much to say here. Unsure how I feel about this big number specifically, but anyways */
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  color: #1F2937;
+  margin: 0px 0px 5px 0px; /* All understandable besides this line of code. I think I get what's going on here though, so I'm chilling */
+  /* font-family: Arial, Helvetica, sans-serif; Commented this out because it doesn't do anything unless I change to a different font */
+}
+
+span {
+  color: #1F2937;
+  font-weight: bold;
+  /* text-align: right; Only one of these is needed and I'll keep align-self */
+  align-self: flex-end;
+  font-size: 24px;
+  padding-right: 50px; /* The span is supposed to be right under "knows" so yeah */
+  /* font-family: Arial, Helvetica, sans-serif; Reasoning is explained down below */
+}
+
+/* Modal (?) section */
+
+.sign-up { /* Added this new div to make it easier to match example output */
+  display: flex; /* Makes it so container down below better resembles example output */
+  padding: 100px; /* Initially had 50px for right and left, but it wasn't doing anything. They are good to go thanks to display: flex above */
+  justify-content: center;
+  /* align-items: center; Not doing anything */
+}
+
+.modal-container {
+  display: flex;
+  background-color: #3882F6;
+  /* justify-content: space-around; Not doing anything */
+  padding: 50px 200px; /* Right and left was 120px initially but I upped it to 200px to make it better match te example output */
+  border-radius: 15px; /* To make it match the output */
+  gap: 50px; /* Wanted to increase this but it made the container too big */
+}
+
+h3 {
+  font-size: 24px; /* Surprised this is needed, as I figured h3 would be enough for the size */
+  color: white;
+  /* font-weight: bold; Not doing anything */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px; /* Both this and the margin: 0 below are needed to match the example output. Fixes up the spacing */
+}
+
+.encouragement { /* Check the iPad notes for the comments I deleted relating to this! Lots deleted haha.. love going in circles! */
+  font-size: 18px; 
+  font-family: Arial, Helvetica, sans-serif;
+  color: #E5E7EB; /* Interesting how getting rid of this and the above doesn't do anything. Default values where..? */
+  margin: 0;
+}
+
+.modal-buttons {
+  background: #3882F6;
+  color: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 40px; /* Kept going back and fort on the right and left, but it's fine rn. Weird how changing the top and bottom is moot.. */
+  font-size: 16px; /* Originally 20 but I think that was too big */
+  /* font-weight: bold; Not doing anything */
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  /* flex-direction: column; Don't think this is needed */
+  align-items: center;
+  justify-content: center;
+  background-color: #1F2937;
+  color: #E5E7EB;
+  height: 72px; /* To make it as big as it appears in the output example */
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin: 0;
+  padding: 0;  Unsure why I even added these, they don't do anything it seems. They aren't how we stick the footer to the bottom */
+}
