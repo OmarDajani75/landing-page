@@ -2,45 +2,53 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  padding: 0;
-  margin: 0;
+  padding: 0; These three aren't doing anything */
+  margin: 0; /* So the fist section takes up the entire space up there, no white space on all sides */
 }
 
-.container {
+.container { /* All makes sense */
   display: flex;
+  justify-content: center;
   /* justify-content: space-around; Not doing anything */
   background: #1F2937;
-  padding-bottom: 20px;
+  padding-bottom: 20px; /* I feel like this is extra, but this *is* how it looks on the output.. */
   margin-bottom: 50px;
 }
 
 .left-side {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; Not doing anything */
   padding: 20px 30px 50px 30px;
-  gap: 52px;
-  width: 35%;
+  gap: 50px; /* title isn’t affected by this because it has its own div if I had to guess */
+  width: 35%; /* Forcing the width to look a certain way to not look busted */
 }
       
 .title {
   color: #F9FAF8;
-  padding: 16px;
+  /* padding: 16px; No need for this */
   font-size: 24px;
   font-weight: bolder;
+  /* margin: 0; No need for this either. Is it not doing anything because this has its own div..? */
 }
+
+/* .left-side-items {
+  display: block;
+} Don't think this is needed */
 
 h1 {
   font-size: 48px;
-  font-weight: bolder;
+  font-weight: bolder; /* No clue why this is a requirement. It isn't doing anything */
   color: #F9FAF8;
+  margin: 5px 0; /* Need that 0 as the start of h1 will be slightly off the start of title which is what we want. Also 5 helps as distance is too much otherwise */
 }
 
 p {
   font-size: 18px;
   color: #E5E7EB;
+  margin: 5px 0 10px 0; /* Do I need to explain how margin works still? Lmao */
 }
 
 button {
@@ -50,12 +58,12 @@ button {
   border-radius: 5px;
   cursor: pointer;
   padding: 5px 30px;
-  font-size: 15px;
+  /* font-size: 15px; Just to make the button resemble the output a bit better */
   font-weight: bold;
 }
 
 .right-side {
-  width: 35%;
+  width: 35%; /* I can't tell if I should get rid of this or not..? I assume not but eh.. I think it matches the output without this as well. */
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -65,12 +73,13 @@ button {
       
 ul {
   display: flex;
-  gap: 20px;
+  gap: 25px;
   list-style: none;
-  padding: 5px 16px;
+  margin: 0;
+  /* padding: 5px 16px; No need */
 }
       
-a {
+a { /* All makes sense */
   color: #E5E7EB;
   text-decoration: none;
   font-size: 18px;
@@ -78,7 +87,8 @@ a {
 
 img {
   width: 360px;
-  height: 200px;
+  height: 200px; /* I feel like there's a better way to adjust this without using width and height.. */
+  align-self: center;
 }
 
 /* Boxes section */
